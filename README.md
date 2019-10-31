@@ -1,7 +1,7 @@
 About tibanna
 =============
 
-Home: http://data.4dnucleome.org
+Home: http://data.4dnucleome.org 
 
 Package license: MIT
 
