@@ -1,5 +1,5 @@
 {% set name = "tibanna" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: ef8861d63f77fab1d790a59cf17c7840d9248322cd1d5bbb470b9eca9e858726
+  sha256: 411068196c7840cdde8cfe5d4c0aa8c29c785e670ca1a931b8ca4f941e8eafbf
 
 build:
   number: 0
