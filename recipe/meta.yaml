@@ -37,8 +37,6 @@ requirements:
 test:
   imports:
     - tibanna
-  commands:
-    - tibanna --help
 
 about:
   home: "http://data.4dnucleome.org"
