@@ -1,5 +1,5 @@
 {% set name = "tibanna" %}
-{% set version = "0.15.0" %}
+{% set version = "0.18.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 92d2e1e8e8c82c3def97daf13067ec96851c6e82a2dcf50fdeaa667efa39e9fc
+  sha256: d4f0cde490e7fe6269ee08ff966293af60af1ef27dd8616ba29856b58fed0907
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - pip
     - python ==3.6
     - python-lambda-4dn ==0.12.3
-    - requests ==2.22.0
+    - requests >=2.22.0
     - urllib3 >=1.24
   run:
     - benchmark-4dn >=0.5.8
@@ -31,7 +31,7 @@ requirements:
     - botocore >=1.12.1
     - python ==3.6
     - python-lambda-4dn ==0.12.3
-    - requests ==2.22.0
+    - requests >=2.22.0
     - urllib3 >=1.24
 
 test:
