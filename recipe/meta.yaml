@@ -10,7 +10,7 @@ source:
   sha256: 58e10cbe50c62b563f79557b4f14b274c09a91173b6bd8d623a2a11577b6e8e2
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - tibanna = tibanna.__main__:main
   script: '{{ PYTHON }} -m pip install . -vv '
