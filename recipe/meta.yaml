@@ -10,7 +10,8 @@ source:
   sha256: 58e10cbe50c62b563f79557b4f14b274c09a91173b6bd8d623a2a11577b6e8e2
 
 build:
-  number: 0
+  number: 1
+  noarch: python
   entry_points:
     - tibanna = tibanna.__main__:main
   script: '{{ PYTHON }} -m pip install . -vv '
@@ -21,17 +22,17 @@ requirements:
     - boto3 >=1.9.0
     - botocore >=1.12.1
     - pip
-    - python ==3.6
+    - python >=3.6
     - python-lambda-4dn ==0.12.3
-    - requests ==2.22.0
+    - requests >=2.22.0
     - urllib3 >=1.24
   run:
     - benchmark-4dn >=0.5.8
     - boto3 >=1.9.0
     - botocore >=1.12.1
-    - python ==3.6
+    - python >=3.6
     - python-lambda-4dn ==0.12.3
-    - requests ==2.22.0
+    - requests >=2.22.0
     - urllib3 >=1.24
 
 test:
@@ -43,7 +44,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: Tibanna runs portable pipelines (in CWL/WDL) on the AWS Cloud.
+  summary: Tibanna runs portable pipelines on the AWS Cloud.
   doc_url: https://tibanna.readthedocs.io/en/latest/
 
 extra:
