@@ -1,5 +1,5 @@
 {% set name = "tibanna" %}
-{% set version = "0.18.3" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 58e10cbe50c62b563f79557b4f14b274c09a91173b6bd8d623a2a11577b6e8e2
+  sha256: d9a1b050d66386d1e87cb117ebaece69c18329060dcfc741caf57e52edaee3b5
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - tibanna = tibanna.__main__:main
